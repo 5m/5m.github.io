@@ -74,9 +74,17 @@ h2 {
   font-size: 2rem;
 }
 
+@media (max-width: 900px) {
+  html {
+    scroll-snap-type: none;
+  }
+}
+
+/**
 @media (prefers-color-scheme: dark) {
   body {
     color: var(--text-dark);
     background: var(--background-dark);
   }
 }
+*/
