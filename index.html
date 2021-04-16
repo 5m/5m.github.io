@@ -25,33 +25,39 @@
 
 		
 
+		
 
-
-<link rel="modulepreload" href="/./_app/start-6d9bd09c.js">
-			<link rel="modulepreload" href="/./_app/chunks/vendor-bf68beb7.js">
-			<link rel="modulepreload" href="/./_app/chunks/Container-fc40cc70.js">
-			<link rel="modulepreload" href="/./_app/pages/index.svelte-d69ad1fa.js">
-			<link rel="stylesheet" href="/./_app/assets/start-3a4fc535.css">
-			<link rel="stylesheet" href="/./_app/assets/Container-d27884e2.css">
-			<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-3ce11d94.css">
-
+		<link rel="modulepreload" href="/./_app/pages/$layout.svelte-e6edd555.js">
+		<link rel="modulepreload" href="/./_app/chunks/preload-helper-9f12a5fd.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-8656cb52.js">
+		<link rel="modulepreload" href="/./_app/chunks/Container-ac5ce8eb.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-746d957e.js">
+		<link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-0e55e577.css">
+		<link rel="stylesheet" href="/./_app/assets/Container-d27884e2.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-a77dd124.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-6d9bd09c.js";
+			import { start } from "/./_app/start-d2a86710.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/./_app/pages/index.svelte-d69ad1fa.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/",
-					query: new URLSearchParams(""),
-					params: {}
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/$layout.svelte-e6edd555.js"),
+						import("/./_app/pages/index.svelte-746d957e.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
 				}
 			});
 		</script>
@@ -74,8 +80,9 @@
 </button>
 </nav>
 
-<main><div class="primary svelte-a0yiwl"><section class="root svelte-12f98hy paddingNormal fullHeight"><div class="blowout svelte-sscktp"></div>
-<a href="#about" class="scrollButton svelte-sscktp"><svg class="svelte-12pcsyz"><svg width="42" height="38" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M7.565 3.565c-7.42 7.42-7.42 19.45 0 26.87 7.42 7.42 19.45 7.42 26.87 0 7.42-7.42 7.42-19.45 0-26.87" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path><path d="M9 5h24v24H9z"></path><path d="M28.295 16.295a.998.998 0 0 0-1.41 0L22 21.17V2a1 1 0 0 0-2 0v19.17l-4.87-4.88a1.004 1.004 0 1 0-1.42 1.42l6.583 6.583a1 1 0 0 0 1.414 0l6.588-6.588a.997.997 0 0 0 0-1.41z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-rule="nonzero"></path></g></svg></svg>
+<main><div class="primary svelte-a0yiwl"><h1 class="hide svelte-1cmzv0i">5 Monkeys Agency: A Digital Agency in Stockholm &amp; Gothenburg.</h1>
+	<section class="root svelte-12f98hy paddingNormal fullHeight"><div class="blowout svelte-1cmzv0i"></div>
+<a href="#about" class="scrollButton svelte-1cmzv0i"><svg class="svelte-12pcsyz"><svg width="42" height="38" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M7.565 3.565c-7.42 7.42-7.42 19.45 0 26.87 7.42 7.42 19.45 7.42 26.87 0 7.42-7.42 7.42-19.45 0-26.87" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path><path d="M9 5h24v24H9z"></path><path d="M28.295 16.295a.998.998 0 0 0-1.41 0L22 21.17V2a1 1 0 0 0-2 0v19.17l-4.87-4.88a1.004 1.004 0 1 0-1.42 1.42l6.583 6.583a1 1 0 0 0 1.414 0l6.588-6.588a.997.997 0 0 0 0-1.41z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-rule="nonzero"></path></g></svg></svg>
 	<span class="svelte-1pll7am">Go to about us</span></a>
 </section>
 </div>
@@ -84,16 +91,17 @@
 
 
 <span id="about" class="svelte-16s2h6r"></span>
-<div class="monkey svelte-a0yiwl"><section class="root svelte-12f98hy    fullWidth relative"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><article class="svelte-1mn6rv4"><p><strong>This is how we do it.</strong> For more than a decade, we have helped startups and
-			incumbents grow like crazy by using our carefully balanced blend of digital strategy, software
-			engineering and open source software.
+<div class="monkey svelte-a0yiwl"><section class="root svelte-12f98hy    fullWidth relative"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><article class="svelte-1mn6rv4"><h2 class="svelte-1qy1kw3">This is how we do it.</h2>
+		<p class="svelte-1qy1kw3">For more than a decade, we have helped startups and incumbents grow like crazy by using
+			our carefully balanced blend of digital strategy, software engineering and open source
+			software.
 		</p>
-		<p>We are a team of 20+ senior software engineers, designers and digital strategists
+		<p class="svelte-1qy1kw3">We are a team of 20+ senior software engineers, designers and digital strategists
 			delivering scalable digital platforms for large e-commerce players and ambitious startups.
 		</p>
 </article>
 </section>
-<span class="gasell svelte-ftzr4y"><img alt="DI Gasell" src="/_app/assets/di-gasell.927406ba.svg" class="svelte-ftzr4y"></span>
+<span class="gasell svelte-1qy1kw3"><img alt="DI Gasell" src="/_app/assets/di-gasell.927406ba.svg" class="svelte-1qy1kw3"></span>
 </section>
 </div>
 
@@ -103,31 +111,31 @@
 
 
 <span id="clients" class="svelte-16s2h6r"></span>
-<section class="root svelte-12f98hy  fullHeight  fullWidth  center"><div class="wrapper svelte-4k8b0d"><article class="svelte-1mn6rv4"><strong>Some of our clients.</strong>
+<section class="root svelte-12f98hy  fullHeight  fullWidth  center"><div class="wrapper svelte-4k8b0d"><article class="svelte-1mn6rv4"><h2>Some of our clients.</h2>
 </article>
-<div class="root svelte-4k8b0d"><a href="https://reasonstudios.com/" target="_blank" class="root svelte-1i0nmpt" style="background:#F0E8DA" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/reasonstudios.17c01ff0.svg" alt="Reason studios">
-		</div>
-</a><a href="https://bolist.se" target="_blank" class="root svelte-1i0nmpt" style="background:#EF7D0B" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/bolist.fafc50db.svg" alt="Bolist">
-		</div>
-</a><a href="https://eqtventures.com" target="_blank" class="root svelte-1i0nmpt" style="background:#240447" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/eqt.bb10e1d5.svg" alt="EQT">
-		</div>
-</a><a href="https://pressbyran.se" target="_blank" class="root svelte-1i0nmpt" style="background:#EDC607" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/pressbyran.c6cc63ad.svg" alt="Pressbyrån">
-		</div>
-</a><a href="https://dn.se" target="_blank" class="root svelte-1i0nmpt" style="background:#f00" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/dn.b8d0cd89.svg" alt="DN">
-		</div>
-</a><a href="https://ginatricot.com" target="_blank" class="root svelte-1i0nmpt" style="background:#e0c4b6" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
+<div class="root svelte-4k8b0d"><a href="https://ginatricot.com" target="_blank" class="root svelte-1i0nmpt" style="background:#e0c4b6" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Gina Tricot</span>
 			<img src="/_app/assets/ginatricot.af215c48.svg" alt="Gina Tricot">
 		</div>
-</a><a href="https://mojang.com" target="_blank" class="root svelte-1i0nmpt" style="background:#000" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
-			<img src="/_app/assets/mojang.5fe5762d.svg" alt="Mojang">
+</a><a href="https://dn.se" target="_blank" class="root svelte-1i0nmpt" style="background:#f00" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">DN</span>
+			<img src="/_app/assets/dn.b8d0cd89.svg" alt="DN">
 		</div>
-</a><a href="https://sportamore.se/" target="_blank" class="root svelte-1i0nmpt" style="background:#F470DD" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">undefined</span>
+</a><a href="https://pressbyran.se" target="_blank" class="root svelte-1i0nmpt" style="background:#EDC607" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Pressbyrån</span>
+			<img src="/_app/assets/pressbyran.c6cc63ad.svg" alt="Pressbyrån">
+		</div>
+</a><a href="https://eqtventures.com" target="_blank" class="root svelte-1i0nmpt" style="background:#240447" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">EQT</span>
+			<img src="/_app/assets/eqt.bb10e1d5.svg" alt="EQT">
+		</div>
+</a><a href="https://bolist.se" target="_blank" class="root svelte-1i0nmpt" style="background:#EF7D0B" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Bolist</span>
+			<img src="/_app/assets/bolist.fafc50db.svg" alt="Bolist">
+		</div>
+</a><a href="https://sportamore.se/" target="_blank" class="root svelte-1i0nmpt" style="background:#F470DD" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Sportamore</span>
 			<img src="/_app/assets/sportamore.08bde905.svg" alt="Sportamore">
+		</div>
+</a><a href="https://reasonstudios.com/" target="_blank" class="root svelte-1i0nmpt" style="background:#F0E8DA" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Reason studios</span>
+			<img src="/_app/assets/reasonstudios.17c01ff0.svg" alt="Reason studios">
+		</div>
+</a><a href="https://mojang.com" target="_blank" class="root svelte-1i0nmpt" style="background:#000" rel="noopener"><div class="inner svelte-1i0nmpt"><span class="svelte-1pll7am">Mojang</span>
+			<img src="/_app/assets/mojang.5fe5762d.svg" alt="Mojang">
 		</div>
 </a>
 	<div class="plug svelte-4k8b0d"><div><span class="heavy svelte-4k8b0d">Want to join the club?</span>
@@ -140,8 +148,8 @@
 
 
 <span id="open-source" class="svelte-16s2h6r"></span>
-<div class="secondary svelte-a0yiwl"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><div class="svelte-ccakli"><article class="svelte-1mn6rv4"><p><strong>We contribute to open source.</strong> You&#39;ll find contributions from our
-			engineers in major open source projects such as
+<div class="secondary svelte-a0yiwl"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><div class="svelte-tbv0uv"><article class="svelte-1mn6rv4"><h2 class="svelte-tbv0uv">We contribute to open source.</h2>
+		<p class="svelte-tbv0uv">You&#39;ll find contributions from our engineers in major open source projects such as
 			<a href="https://djangoproject.com/" target="_blank" rel="noopener" class="svelte-1hsxzo8">Django
 </a> (used by Instagram, Mozilla, etc.),
 			<a href="https://ansible.com/" target="_blank" rel="noopener" class="svelte-1hsxzo8">Ansible
@@ -150,34 +158,34 @@
 </a> (used by everyone!).
 		</p>
 
-		<p>In addition we maintain a few open source projects ourselves. Some examples include <a href="https://github.com/5monkeys/djedi-cms" target="_blank" rel="noopener" class="svelte-1hsxzo8">Djedi CMS
+		<p class="svelte-tbv0uv">In addition we maintain a few open source projects ourselves. Some examples include <a href="https://github.com/5monkeys/djedi-cms" target="_blank" rel="noopener" class="svelte-1hsxzo8">Djedi CMS
 </a>, <a href="https://github.com/5monkeys/django-bananas" target="_blank" rel="noopener" class="svelte-1hsxzo8">django-bananas
 </a>, <a href="https://github.com/lundberg/respx" target="_blank" rel="noopener" class="svelte-1hsxzo8">RESPX
 </a> and <a href="https://github.com/5monkeys/kapten" target="_blank" rel="noopener" class="svelte-1hsxzo8">Kapten
 </a>.
 		</p>
 </article></div>
-<div class="svelte-1pa1cng"><a href="https://djangoproject.com/" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Django</span>
+<div class="svelte-1pa1cng"><a href="https://djangoproject.com/" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Django</span>
 				<img src="/_app/assets/Django_logo.253e81c5.svg" alt="Django">
-		</a><a href="https://docker.com/" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Docker</span>
+		</a><a href="https://docker.com/" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Docker</span>
 				<img src="/_app/assets/docker.7a2e5e1a.svg" alt="Docker">
-		</a><a href="https://ansible.com" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Ansible</span>
+		</a><a href="https://ansible.com" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Ansible</span>
 				<img src="/_app/assets/ansible.ad692f38.svg" alt="Ansible">
-		</a><a href="https://prettier.io" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Prettier</span>
+		</a><a href="https://prettier.io" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Prettier</span>
 				<img src="/_app/assets/prettier.a0e494e4.svg" alt="Prettier">
-		</a><a href="https://docs.celeryproject.org" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Celery</span>
+		</a><a href="https://docs.celeryproject.org" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Celery</span>
 				<img src="/_app/assets/celery.ff4be1f2.svg" alt="Celery">
-		</a><a href="https://pycqa.github.io/isort" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">ISORT</span>
+		</a><a href="https://pycqa.github.io/isort" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">ISORT</span>
 				<img src="/_app/assets/isort.63628a8f.svg" alt="ISORT">
-		</a><a href="https://www.python-httpx.org" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">HTTPX</span>
+		</a><a href="https://www.python-httpx.org" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">HTTPX</span>
 				<img src="/_app/assets/HTTPX.414dc611.svg" alt="HTTPX">
-		</a><a href="https://github.com/5monkeys/kapten" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Kapten</span>
+		</a><a href="https://github.com/5monkeys/kapten" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Kapten</span>
 				<img src="/_app/assets/kapten.6ca8b4a6.svg" alt="Kapten">
-		</a><a href="https://github.com/5monkeys/django-bananas" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Django Bananas</span>
+		</a><a href="https://github.com/5monkeys/django-bananas" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Django Bananas</span>
 				<img src="/_app/assets/bananas.b30ff7ca.svg" alt="Django Bananas">
-		</a><a href="https://github.com/5monkeys/djedi-cms" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">Djedi CMS</span>
+		</a><a href="https://github.com/5monkeys/djedi-cms" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">Djedi CMS</span>
 				<img src="/_app/assets/djedi-portrait.1e6666c4.svg" alt="Djedi CMS">
-		</a><a href="https://lundberg.github.io/respx" class="tech svelte-ccakli" rel="noopener"><span class="svelte-1pll7am">RESPX</span>
+		</a><a href="https://lundberg.github.io/respx" class="tech svelte-tbv0uv" rel="noopener"><span class="svelte-1pll7am">RESPX</span>
 				<img src="/_app/assets/RESPX.d68cd164.svg" alt="RESPX">
 		</a>
 </div>
@@ -190,9 +198,10 @@
 
 
 <span id="careers" class="svelte-16s2h6r"></span>
-<div class="tertiary svelte-a0yiwl"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><article class="svelte-1mn6rv4"><p><strong>Join us!</strong> We&#39;re always looking for talented colleagues who share our love for
-		open source software and our relentless focus on high-quality engineering. Do you wish you had
-		colleagues who cared deeply about open source? Apply now!
+<div class="tertiary svelte-a0yiwl"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><article class="svelte-1mn6rv4"><h2 class="svelte-1bh8rau">Join us!</h2>
+	<p>We&#39;re always looking for talented colleagues who share our love for open source software and
+		our relentless focus on high-quality engineering. Do you wish you had colleagues who cared
+		deeply about open source? Apply now!
 	</p>
 
 	<p>Apply by connecting to <span class="svelte-1dxesvu">join.5monkeys.se</span> via SSH and follow the instructions.
@@ -212,26 +221,28 @@
 
 
 
-<div class="root svelte-1s60tet"><div class="offices svelte-1s60tet"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><div class="inner svelte-1s60tet"><p class="office"><strong>Stockholm office. </strong><br>
-			<a href="https://goo.gl/maps/rK183Qy6hftXA29B6" target="_blank" rel="noopener" class="svelte-1hsxzo8">Götgatan 36, 4:th floor<br>
+<div class="root svelte-1s60tet"><div class="offices svelte-1s60tet"><section class="root svelte-12f98hy paddingNormal fullHeight    center"><div class="inner svelte-1s60tet"><div class="office"><h2>Stockholm office.</h2>
+
+			<a href="htdivs://goo.gl/maps/rK183Qy6hftXA29B6" target="_blank" rel="noopener" class="svelte-1hsxzo8">Götgatan 36, 4:th floor<br>
 				Slussen, Stockholm
 			
 </a>
 			<br>
 
 			<a href="tel:+46850006653" target="_blank" rel="noopener" class="svelte-1hsxzo8">+46-8-5000 66 53
-</a></p>
+</a></div>
 
-		<p class="office"><strong>Gothenburg office.</strong><br>
+		<div class="office"><h2>Gothenburg office.</h2>
+
 			<a href="https://goo.gl/maps/oNyv3WhEehduf7qz8" target="_blank" rel="noopener" class="svelte-1hsxzo8">Viktor Rydbergsgatan 14<br>
 				Götaplatsen, Göteborg<br>
 </a>
 			<a href="tel:+46317674000" target="_blank" rel="noopener" class="svelte-1hsxzo8">+46-31-76 74 000
-</a></p>
+</a></div>
 
-		<p><strong>Get in touch.</strong><br>
+		<div><h2>Get in touch.</h2>
 			<a href="mailto:hello@5monkeys.se" target="_blank" rel="noopener" class="svelte-1hsxzo8">hello@5monkeys.se
-</a><br></p></div>
+</a><br></div></div>
 </section></div>
 	<div class="preview svelte-1s60tet">
 
